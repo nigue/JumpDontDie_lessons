@@ -1,6 +1,7 @@
 package com.jumpdontdie.core;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Screen;
 
 public class MainGame extends Game {
 
@@ -15,7 +16,7 @@ public class MainGame extends Game {
 
     @Override
     public void create() {
-        setScreen(new MainGameScreen(this));
+        setScreen(new Box2DScreen(this));
 //        minijoe = new Texture("hatenac.png");
 //        pinchos = new Texture("pinchos.png");
 //        textureRegionPinchos = new TextureRegion(pinchos, 0, 60, 128, 60);
